@@ -12,7 +12,6 @@ export default function LocationPageLayout({
   continentLocation,
   donors,
 }: LocationPageProps) {
-  console.log(import.meta.env.VITE_GOOGLE_API_KEY);
   if (!import.meta.env.VITE_GOOGLE_API_KEY) {
     throw new Error("VITE_GOOGLE_API_KEY is not defined");
   }

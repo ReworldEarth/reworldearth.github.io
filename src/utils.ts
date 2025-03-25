@@ -30,7 +30,6 @@ const computeImpact = (
     .reduce((acc, cur) => {
       return (acc || 0) + cur;
     }, 0);
-  console.log("fractions", fractions, hectares, totalImpactMetrics);
   impactScore.acres = fractions / 100;
   impactScore.carbonRemovedTons =
     (totalImpactMetrics.carbonRemovedTons / totalImpactMetrics.acres) *
