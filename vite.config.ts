@@ -13,5 +13,6 @@ export default ({ mode }: { mode: string }) => {
         include: "**/*.svg", // allows importing any `svg` file as a React component
       }),
     ],
+    base: "/",
   });
 };
