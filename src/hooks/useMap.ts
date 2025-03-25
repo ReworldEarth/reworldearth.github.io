@@ -55,7 +55,7 @@ export default function useMap({
     useState<OwnedHectarePopupMetadata | null>(null);
   const [hectareInfoPopup, setHectareInfoPopup] =
     useState<OwnedHectarePopupMetadata | null>(null);
-  const activeRectangle = useRef<google.maps.Rectangle>(); // Have to use ref due to closures
+  const activeRectangle = useRef<google.maps.Rectangle | null>(null); // Have to use ref due to closures
   const [prevPartialRectangle, setPrevPartialRectangle] =
     useState<google.maps.Rectangle>();
   const [disableBackdrop, setDisableBackdrop] = useState<boolean>(false);
@@ -644,7 +644,7 @@ export default function useMap({
         fillColor: color,
       });
       setActiveHectare(undefined);
-      activeRectangle.current = undefined;
+      activeRectangle.current = null;
     }
   };
 
