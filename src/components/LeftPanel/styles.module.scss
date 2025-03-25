@@ -1,0 +1,92 @@
+.smallText {
+  font-size: 10px;
+  line-height: 120%;
+}
+
+.smallBoldText {
+  font-size: 10px;
+  line-height: 120%;
+  font-weight: 700;
+  text-align: right;
+  color: #32727a;
+}
+
+.mediumText {
+  font-size: 12px;
+  line-height: 120%;
+}
+
+.mediumBoldText {
+  font-size: 12px;
+  line-height: 120%;
+  font-weight: 700;
+  text-align: right;
+  color: #32727a;
+}
+
+.flexAlignCenter {
+  display: flex;
+  align-items: center;
+}
+
+.partialCounterWrapper {
+  display: flex;
+  width: 107px;
+  height: 32px;
+}
+
+.counterButton {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #32727a;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #32727a;
+}
+
+.minusButton {
+  border-radius: 8px 0px 0px 8px;
+}
+
+.addButton {
+  border-radius: 0px 8px 8px 0px;
+}
+
+.partialCounterTextField {
+  width: 43px;
+  height: 32px;
+  border-width: 1px 0px;
+  border-style: solid;
+  border-color: #c1c1c1;
+  border-radius: 0px;
+}
+
+.counterInputField {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #32727a;
+  height: 21px;
+  padding: 6px;
+  border-radius: 0px;
+}
+
+.backdropTransparent {
+  background: transparent;
+}
+
+.avatar {
+  img {
+    border-radius: 50%;
+  }
+}
